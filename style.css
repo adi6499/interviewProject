@@ -1,0 +1,652 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contain {
+    width: 100vw;
+    height: 115vh;
+    position: relative;
+    display: grid;
+    place-items: center;
+    background: black;
+    overflow: hidden;
+}
+
+.innerImageSearch {
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 0%;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    ;
+}
+
+.imageBanner {
+    width: 100%;
+    height: 100%;
+    background-image: url(./images/banner.jpg);
+    background-size: cover;
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    filter: brightness(70%);
+    transition: all 300ms ease-in-out;
+
+}
+
+.innerImageSearch:hover>.imageBanner {
+    transform: scale(1.1);
+    filter: brightness(70%);
+}
+
+.bannerPost {
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    bottom: 0%;
+    ;
+    display: grid;
+    place-items: center;
+    ;
+}
+
+.boxes {
+    width: 90%;
+    height: 90%;
+    perspective: 2400px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    place-items: center;
+}
+
+.boxQuote {
+    width: 50vmin;
+    height: 90%;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 3vmin;
+    margin-right: 4vmin;
+    ;
+    padding: 2vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    place-items: center;
+    transition: all 200ms linear;
+    transform-origin: center;
+}
+
+.boxQuote:hover {
+    background: linear-gradient(45deg, rgb(255, 44, 86), rgb(0, 162, 255));
+    color: white;
+    transform: translateY(-10%)scale(1.2);
+}
+
+.boxQuote>.content {
+    width: 90%;
+    font-weight: 500;
+    font-size: 2.5vmin;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 4vmin
+}
+
+.boxQuote>button {
+    width: 20vmin;
+    height: 6vmin;
+    background: rgb(0, 210, 210);
+    color: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    border-radius: 4vmin;
+    font-size: 1.5vmin;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.search {
+    width: 70%;
+    height: 10vmin;
+    position: absolute;
+
+    display: grid;
+    place-items: center;
+}
+
+.lines {
+    width: 100%;
+    height: 24%;
+    top: 0%;
+    position: absolute;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    flex-direction: start;
+
+}
+
+.lines>div {
+    text-align: center;
+    width: 7vmin;
+    margin-right: 2vmin;
+    ;
+    font-size: 2vmin;
+    ;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.lines>div:hover {
+    border-bottom: .4vmin solid rgb(6, 198, 198);
+}
+
+#property {
+    width: 15vmin;
+    height: 5vmin;
+    left: 3%;
+    position: absolute;
+    bottom: 5%;
+    border-radius: 1vmin;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.22);
+    color: white;
+    font-size: 2vmin;
+    border: 1px solid turquoise;
+}
+
+#property>option {
+    padding: 3vmin;
+    height: 5vmin;
+    font-size: 2vmin;
+    padding: 3vmin;
+    background: rgb(6, 6, 6);
+    margin: 1vmin;
+    border-radius: 1vmin;
+}
+
+.searchingBar {
+    width: 80%;
+
+
+    height: 60%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-around;
+}
+
+.searchingBar>input {
+    width: 80%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 2vmin;
+    font-size: 2vmin;
+    text-transform: capitalize;
+    border-radius: 2vmin 0vmin 0vmin 2vmin;
+}
+
+.searchingBar>button {
+    width: 20%;
+    height: 100%;
+    border: none;
+    background: turquoise;
+    color: rgb(44, 42, 42);
+    font-size: 2.5vmin;
+    border-radius: 0vmin 2vmin 2vmin 0vmin;
+}
+
+.contain1 {
+    width: 100vw;
+    height: 140vh;
+    display: grid;
+    place-items: center;
+    position: relative;
+   
+}
+
+.projectImageSlide {
+    width: 90%;
+    height: 50%;
+    position: absolute;
+    
+    top: 5%;
+    border-radius: 3vmin;
+    overflow: hidden;
+}
+
+.projectImage {
+    width: 60%;
+    height: 100%;
+    position: absolute;
+
+    background-image: url(./images/project_image.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.projectForm {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    right: 0%;
+    background: black;
+    display: grid;
+    place-items: center;
+    ;
+}
+
+#form {
+    color: white;
+    width: 70%;
+    height: 60%;
+    position: absolute;
+    ;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: space-around;
+    
+}
+
+.head>span {
+    font-size: 2.5vmin;
+    font-weight: bold;
+    background: linear-gradient(to right,rgb(3, 228, 138),rgb(31, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+.info{
+    font-weight: 500;
+    font-size:2.2vmin;
+    width: 100%;
+    text-align: start;
+    padding: 0vmin 0vmin 0vmin 3vmin;
+}
+
+#form > input{
+    width:90%;
+    height:6vmin;
+    border:1px solid white;
+    background:black;
+    color:white;
+    padding:1vmin;
+    text-transform: uppercase;
+    border-radius:1vmin;
+    outline:none;
+}
+#form > input:last-child{
+    background:linear-gradient(to right,rgb(5, 168, 250),rgb(250, 33, 84));
+    font-size: 2vmin;
+    border:none;
+}
+
+#form > input:focus{
+    background: rgb(255, 255, 255);
+    color: black;
+}
+
+.headlineProperty{
+    position: absolute;
+    top:3%;
+    left:3%;
+    font-size: 3vmin;;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.properties{
+    width:90%;
+    height:45%;
+  
+    bottom:0%;
+    position:absolute;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    place-items:end;
+    
+}
+.box1PropLeft{
+    width:50%;
+    height:80%;
+
+   position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top:8vmin;
+   
+}
+.box1PropLeft > button{
+    position: absolute;
+    top:0%;
+    left:5%;
+    width: 15vmin;
+    height: 5vmin;
+    background:turquoise;
+    color:rgb(255, 255, 255);
+    border:none;
+    outline:none;
+    border-radius:1vmin;
+    font-size: 2vmin;
+}
+.box1PropLeft >div> h2{
+    color: aquamarine;;
+}
+.box2PropRight >div> h2{
+    color: aquamarine;;
+}
+
+.box1PropLeft > div{
+    width: 35vmin;
+    height:20vmin;
+    line-height: 3.5vmin;
+    padding:2vmin;
+    background:black ;
+    color:white;
+    border-radius:1vmin;
+    transition: all 30ms linear;
+}
+
+.box2PropRight{
+    width:50%;
+    height:80%;
+    
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top:8vmin;
+    color:white;
+    
+   
+}
+.box2PropRight > button{
+    position: absolute;
+    top:0%;
+    left:5%;
+    width: 15vmin;
+    height: 5vmin;
+    background:turquoise;
+    color:rgb(255, 255, 255);
+    border:none;
+    outline:none;
+    border-radius:1vmin;
+    font-size: 2vmin;
+}
+
+.box2PropRight > div{
+    width: 35vmin;
+    height:20vmin;
+    
+    padding:2vmin;
+    color:white;
+    background:black ;
+    border-radius: 1vmin;
+    transition: all 30ms linear;
+    line-height: 3.5vmin;
+}
+
+.box1PropLeft > div:hover{
+    transform:scale(1.1);
+}
+.box2PropRight > div:hover{
+    transform:scale(1.1);
+}
+
+.box1PropLeft,.box2PropRight{
+    margin-bottom: 5vmin;
+}
+.mainPropContentLeft{
+    position: absolute;
+    left: 5%;
+    bottom:-8%;
+    color:black
+}
+.mainPropContentLeft > span{
+    cursor: pointer;
+    color:turquoise;
+}
+
+.mainPropContentRight{
+    position: absolute;
+    left: 5%;
+    bottom:-8%;
+    color:black
+}
+.mainPropContentRight > span{
+    cursor: pointer;
+    color:turquoise;
+}
+
+.contain3{
+    width:100vw;
+    height:120vh;
+    position:relative;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+
+.rating{
+    width: 100%;
+    height: 30%;
+    position:absolute;
+    top:0%;
+    display: flex;
+    flex-direction:row;
+    justify-items: space-around;
+    place-items:center;
+    justify-content:center ;
+    background:linear-gradient(to bottom,rgb(48, 47, 47),black)
+}
+.rating > div{
+    width:25vmin;
+    height:80%;
+  
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+    color:white
+}
+.points{
+    width:55%;
+    height:45%;
+    background:white;
+    color:black;
+    display: grid;
+    place-items:center;
+    border-radius:50%;
+    font-size:4vmin;
+    font-weight: bold;
+    margin-bottom:2vmin;
+}
+
+.nameRated{
+
+    font-weight: bold;
+}
+
+#carouselExampleIndicators{
+    width: 100%;
+    height:30%;
+    top:1%;
+    background: rgb(10, 20, 32);
+    color: rgb(255, 255, 255);
+    display: grid;
+    place-items:center ;
+    font-size: 3vmin;
+}
+.carousel-item{
+    text-align: center;
+    width: 100%;
+    height: 10vmin;
+    line-height: 4vmin;
+  
+}
+
+#carouselExampleIndicators > a{
+    width: 5vmin;
+    height: 5vmin;
+    border-radius:50%;
+    top:30%;
+    margin: 4vmin;;
+    color:black;
+    background-color: black;
+   
+}
+.name{
+    text-decoration: underline;
+    font-size: 4vmin;
+    margin-top: 2vmin;
+}
+
+#quoteImage{
+    top:-20%;
+    position: absolute;
+}
+
+.sponsorImage{
+    width: 300%;
+    height: 30%;
+    
+    bottom:0%;
+     display: flex;
+     ;
+     flex-direction:row;
+     place-items: center;
+     position: absolute;
+     padding:1vmin;
+     animation:image 24s linear infinite;
+}
+.sponsorImage > img{
+    width:25vmin;
+    height:15vmin;
+    margin-right: 2vmin;
+    border-radius:2vmin;
+
+}
+@keyframes  image{
+    0%{
+        transform:translateX(50%);
+
+    }
+    50%{
+        transform:translateX(0%);
+    }
+    100%{
+        transform: translateX(50%);
+    }
+}
+.sponsorImage:hover{
+    animation-play-state: paused;
+}
+.close{
+    color: white;
+    background: white;
+    width:5vmin;
+    height:5vmin;
+    display: grid;
+    place-items: center;
+    position:absolute;
+    right:5%;
+    top:5%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.closeForm{
+    width:5vmin;
+    height:5vmin;
+    display: grid;
+    place-items: center;
+    position:absolute;
+    right:5%;
+    top:5%;
+    background:black; 
+    color:white;
+    cursor: pointer;
+}
+
+
+.sentForm{
+    transition: all 300ms linear;;
+     opacity: 0;
+     transform: translateY(-100%);
+    width:40vmin;
+    height: 50vmin;
+    background:white;
+    position: absolute;
+    border:2px dotted black;
+    z-index: 30303;
+  
+    left:40%;
+    border-radius:3vmin;
+    box-shadow: 0px 0px 3px black,
+    0px 0px 3px inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:3vmin;
+}
+.sentForm >label> textarea{
+    width: 100%;
+    height:40%;
+    font-weight: bold; 
+    padding: 2vmin;   
+    margin-top: 3vmin;
+    
+}
+
+.sentForm >label{
+    font-weight: bold;      
+}
+
+.sentForm > button{
+    height:5vmin;
+    background:linear-gradient(to bottom,black,rgb(54, 53, 53));
+    color:white;
+    border-radius:4vmin;
+   
+}
+.sentFormOpacity{
+    opacity: 10;
+    transform: translate(0%);
+}
+
+.popupMessage{
+    width: 50vmin;
+    height:40vmin;
+    position: absolute;
+    z-index: 444;
+    background:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    display: grid;
+    place-items: center;
+    text-transform: uppercase;
+    border:4px dotted red;
+    padding:2vmin;
+    border-radius:4vmin;
+    font-weight: bold;
+    font-size: 2vmin;
+    right: 5%;
+    bottom: 20%;
+}
